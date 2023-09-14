@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaMa - Kalkulator Matematika</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <section class="title">
+        <h1>
+            <span class="titleShorten">KaMa </span>
+            <span class="titleExtend">Kalkulator Matematika</span>
+        </h1>
+    </section>
+    <section class="description">
+        <h2 class="descriptionHead">Welcome to KaMa :)</h2>
+        <div class="descriptionBody">
+            <p>Hello everyone! Welcome to KaMa,<br/>
+            a simple web app to calculate the perimeter and area of a square.</p>
+        </div>
+    </section>
+    <div class="flex-container">
+        <div class="flex-child">
+            <div class="perimeter">
+                <section class="square">
+                    <div class="squareTitle">
+                        <h2>Square Perimeter</h2>
+                    </div>
+                    <div class="squareDescription">
+                        <p class="image" id="squareImage">
+                            <img src="images/square.png" alt="Square">
+                        </p>
+                        <p>The formula for the perimeter of a square is:</p>
+                        <p class="formula" id="squarePerimeterFormula">P = 4 × l</p>
+                        <p>Where:<br/>
+                        P = Perimeter<br/>
+                        l = Length of sides</p>
+                    </div>
+                    <div class="squareCalculation">
+                        <form onsubmit="return false">
+                            <div class="squareCalculationTitle">
+                                <h2>Calculate Square Perimeter</h2>
+                            </div>
+                            <div class="squareInputButton">
+                                <input class="input" id="lengthPerimeter" name="lengthPerimeter" type="number" min="0" placeholder="Input length of sides"></input>
+                                <br/>
+                                <button class="calculate" id="calculatePerimeter" name="calculatePerimeter" onclick="calculate_perimeter()">Calculate</button>
+                                <button class="reset" id="resetPerimeter" type="resetPerimeter" onclick="reset_perimeter()">Reset</button>
+                                <div class="output" id="outputPerimeter1"></div>
+                                <div class="output" id="outputPerimeter2"></div>
+                                <div class="output" id="outputPerimeter3"></div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="flex-child">
+            <div class="area">
+                <section class="square">
+                    <div class="squareTitle">
+                        <h2>Square Area</h2>
+                    </div>
+                    <div class="squareDescription">
+                        <p class="image" id="squareImage">
+                            <img src="images/square.png" alt="Square">
+                        </p>
+                        <p>The formula for the Area of a square is:</p>
+                        <p class="formula" id="squareAreaFormula">A = l × l</p>
+                        <p>Where:<br/>
+                        A = Area<br/>
+                        l = Length of sides</p>
+                    </div>
+                    <div class="squareCalculation">
+                        <form onsubmit="return false">
+                            <div class="squareCalculationTitle">
+                                <h2>Calculate Square Area</h2>
+                            </div>
+                            <div class="squareInputButton">
+                                <input class="input" id="lengthArea" name="lengthArea" type="number" min="0" placeholder="Input length of sides"></input>
+                                <br/>
+                                <button class="calculate" id="calculateArea" name="calculateArea" onclick="calculate_area()">Calculate</button>
+                                <button class="reset" id="resetArea" type="resetArea" onclick="reset_area()">Reset</button>
+                                <div class="output" id="outputArea1"></div>
+                                <div class="output" id="outputArea2"></div>
+                                <div class="output" id="outputArea3"></div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>       
+    </div>
+    <footer>
+        <div class="credit">Ivan Bertrand Reynaldi Widagdo</div>
+    </footer>
+</body>
+</html>
